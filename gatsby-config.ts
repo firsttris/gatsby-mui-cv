@@ -14,7 +14,7 @@ const config: GatsbyConfig = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-transformer-remark", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -28,7 +28,14 @@ const config: GatsbyConfig = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: "./src/data/",
+      name: `data`
+    }
+  },]
 };
 
 export default config;
