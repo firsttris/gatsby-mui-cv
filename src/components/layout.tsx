@@ -1,6 +1,5 @@
 import { MDXProvider } from "@mdx-js/react"
 import { Typography } from "@mui/material"
-import * as React from "react" 
 
 interface Props {
     children: React.ReactNode 

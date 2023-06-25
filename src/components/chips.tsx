@@ -1,5 +1,4 @@
 import { Chip } from "@mui/material"
-import * as React from "react" 
 
 interface Props {
     labels: string
