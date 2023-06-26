@@ -5,11 +5,8 @@ import '@fontsource/roboto/700.css';
 import { Box, CircularProgress, Typography } from '@mui/material';
 
 
-const IndexPage = () => {
-
+export default () => {
   return (
     <Box><Typography>Welcome to MUI</Typography><CircularProgress /></Box>
   )
 }
-
-export default IndexPage

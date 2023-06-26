@@ -1,11 +1,16 @@
 import { Chip } from "@mui/material"
+import { ReactNode } from "react"
 
 interface Props {
-    labels: string
+    children: {
+        props: {
+            children: string
+        }
+    }
 }
 
-export const Chips: React.FC<Props> = ({labels}) => {
-    const labelsAsArray = labels.split(',')
-    return labelsAsArray.map(label => <Chip label={label} sx={{ mx: 1 }}/>)
+export const Chips: React.FC<Props> = ({children}) => {
+    const labelsAsArray = children?.props?.children.split(',')
+    return labelsAsArray.map((label, index) => <Chip key={index} label={label} sx={{ mx: 1 }}/>)
 
 }
