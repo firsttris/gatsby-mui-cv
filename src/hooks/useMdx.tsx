@@ -2,7 +2,6 @@ import Projects_DE from "./../mdx/de/projects.mdx";
 import Projects_EN from "./../mdx/en/projects.mdx";
 import Description_DE from "./../mdx/de/description.mdx";
 import Description_EN from "./../mdx/en/description.mdx";
-import Skills_DE from "./../mdx/de/skills.mdx";
 import Skills_EN from "./../mdx/en/skills.mdx";
 import { useLocation } from "@reach/router";
 
@@ -10,7 +9,7 @@ const mdx = {
   de: {
     Description: Description_DE,
     Projects: Projects_DE,
-    Skills: Skills_DE,
+    Skills: Skills_EN,
   },
   en: {
     Description: Description_EN,

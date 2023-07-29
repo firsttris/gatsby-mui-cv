@@ -66,7 +66,7 @@ export const ProfileHeader = () => {
           <Typography variant="h3" sx={{ textTransform: "uppercase" }}>
             Tristan Teufel
           </Typography>
-          <Typography variant="h5">Fullstack Entwickler</Typography>
+          <Typography variant="h5">Fullstack Developer</Typography>
           <Typography variant="caption">
             Wirtschaftsinformatik (B.Sc)
           </Typography>
