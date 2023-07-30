@@ -5,7 +5,7 @@ import { ProfileHeader } from "./profileHeader";
 import "./global.css";
 
 export const CV = () => {
-  const { Projects, Description, Skills } = useMdx();
+  const { Projects, Description, Skills, OpenSource } = useMdx();
 
   return (
     <Layout>
@@ -16,14 +16,17 @@ export const CV = () => {
         <Box>
           <ProfileHeader />
         </Box>
-        <Box mt="30px">
+        <Box mt="20px">
           <Description />
         </Box>
-        <Box mt="30px">
+        <Box mt="20px">
           <Skills />
         </Box>
-        <Box sx={{ marginTop: "30px", "@media print": { marginTop: "0" } }}>
+        <Box sx={{ marginTop: "20px", "@media print": { marginTop: "0" } }}>
           <Projects />
+        </Box>
+        <Box>
+          <OpenSource />
         </Box>
       </Container>
     </Layout>

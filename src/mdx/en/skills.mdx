@@ -5,10 +5,13 @@ locale: "en"
 
 import { Chips } from './../../components/chips.tsx'
 import { SkillGrid } from './../../components/skillGrid.tsx'
-
+import { Divider, Box } from "@mui/material";
 
 # Fähigkeiten
 
+<Divider sx={{ margin: "5px 0px 10px 0px"}}/>
+
+<Box>
 <SkillGrid title="Programmiersprachen" skills="TypeScript, JavaScript, Python, Java" />
 <SkillGrid title="Bibliotheken" skills="React, GatsbyJs, NX, NextJs, NuxtJs, ExpressJs, Redux, AgGrid, Nodejs, TypeORM, Squelize, HapiJs, lowDb, Lodash, Apollo, VueJs, AngularJs" />
 <SkillGrid title="Styling" skills="(MUI) Material-UI, Styled-Components, CSS-Modules, TailwindCSS, Bootstraps" />
@@ -17,4 +20,5 @@ import { SkillGrid } from './../../components/skillGrid.tsx'
 <SkillGrid title="CI" skills="Gitlab, BitBucket, Github, Linux, Docker, Bash, Kubernetes, Azure, ReverseProxy" />
 <SkillGrid title="Bundler" skills="Webpack, Vite, Parcel, Rollup, esbuild" />
 <SkillGrid title="API" skills="Open-API, REST, JSON:API, Soap" />
-<SkillGrid title="IDE" skills="IntelliJ IDEA, Eclipse, VsCode" />
+<SkillGrid title="IDE" skills="VS Code, Jetbrains IntelliJ, Eclipse" />
+</Box>

@@ -3,7 +3,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { MDXProvider } from "@mdx-js/react";
-import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Link, List, ListItem, ListItemText, Typography } from "@mui/material";
 
 interface Props {
   children: React.ReactNode;
@@ -15,7 +15,11 @@ export const Layout: React.FC<Props> = ({ children }) => {
       components={{
         // Map HTML element tag to React component
         p: ({ children }) => <Typography>{children}</Typography>,
-        h1: ({ children }) => <Typography variant="h6">{children}</Typography>,
+        h1: ({ children }) => (
+          <Typography variant="h6" sx={{ lineHeight: "normal" }}>
+            {children}
+          </Typography>
+        ),
         h2: ({ children }) => (
           <Typography mt={2} fontWeight={600}>
             {children}
@@ -32,6 +36,11 @@ export const Layout: React.FC<Props> = ({ children }) => {
           <ListItem sx={{ display: "list-item", py: "2px" }}>
             <ListItemText primary={children} sx={{ my: 0 }} />
           </ListItem>
+        ),
+        a: ({ children, href }) => (
+          <Link underline="none" href={href} rel="noopener" target="_blank">
+            {children}
+          </Link>
         ),
       }}
     >
