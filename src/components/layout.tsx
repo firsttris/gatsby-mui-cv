@@ -16,12 +16,12 @@ export const Layout: React.FC<Props> = ({ children }) => {
         // Map HTML element tag to React component
         p: ({ children }) => <Typography>{children}</Typography>,
         h1: ({ children }) => (
-          <Typography variant="h6" sx={{ lineHeight: "normal" }}>
+          <Typography fontWeight={500} sx={{ fontSize: "25px" }}>
             {children}
           </Typography>
         ),
         h2: ({ children }) => (
-          <Typography mt={2} fontWeight={600}>
+          <Typography mt={2} fontWeight={500} sx={{ fontSize: "20px" }}>
             {children}
           </Typography>
         ),
