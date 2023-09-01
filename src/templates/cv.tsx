@@ -1,1 +1,1 @@
-export { CV as default }  from './../components/cv'
+export { CV as default } from "./../components/cv";
