@@ -5,6 +5,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { styled } from "@mui/system";
+import { useLocation } from "@reach/router";
 
 const ContainerBox = styled(Box)({
   display: "flex",
@@ -39,6 +40,8 @@ const LinkColumn = styled(Box)({
 });
 
 export const ProfileHeader = () => {
+  const { pathname } = useLocation();
+  const isDe = pathname.includes("/de/");
   return (
     <ContainerBox>
       <ImageBox boxShadow={4}>
@@ -66,9 +69,13 @@ export const ProfileHeader = () => {
           <Typography variant="h3" sx={{ textTransform: "uppercase" }}>
             Tristan Teufel
           </Typography>
-          <Typography variant="h5">Senior Software Developer</Typography>
+          <Typography variant="h5">
+            {isDe ? "Senior Software Entwickler" : "Senior Software Developer"}
+          </Typography>
           <Typography variant="caption">
-            Wirtschaftsinformatik (B.Sc.)
+            {isDe
+              ? "Wirtschaftsinformatik (B.Sc.)"
+              : "Business Informatics (B.Sc.)"}
           </Typography>
         </Box>
         <LinkGrid>

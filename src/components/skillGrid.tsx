@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Chips } from "./chips";
 
 interface SkillGridProps {
@@ -8,13 +8,14 @@ interface SkillGridProps {
 
 export const SkillGrid = ({ skills, title }: SkillGridProps) => {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={3} mt="5px">
-        <Typography variant="body1">{title}</Typography>
-      </Grid>
-      <Grid item xs={9}>
-        <Chips skills={skills} />
-      </Grid>
-    </Grid>
+    <Box sx={{ display: "flex", alignItems: "top" }}>
+      <Box sx={{ mt: "2px", width: "140px" }}>
+        <Typography variant="body1" sx={{ fontSize: "12px" }}>
+          {title}
+        </Typography>
+      </Box>
+
+      <Chips skills={skills} />
+    </Box>
   );
 };
