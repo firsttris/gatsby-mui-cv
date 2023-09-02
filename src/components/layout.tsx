@@ -25,9 +25,11 @@ export const Layout: React.FC<Props> = ({ children }) => {
             {children}
           </Typography>
         ),
-        h3: ({ children }) => <Typography mt={2}>{children}</Typography>,
+        h3: ({ children }) => (
+          <Typography sx={{ fontSize: "12px" }}>{children}</Typography>
+        ),
         h4: ({ children }) => (
-          <Typography variant="caption">{children}</Typography>
+          <Typography sx={{ fontSize: "10px" }}>{children}</Typography>
         ),
         ul: ({ children }) => (
           <List sx={{ listStyle: "disc", pl: 4, pb: 0 }}>{children}</List>
