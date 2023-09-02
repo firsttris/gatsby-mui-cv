@@ -33,7 +33,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
           <List sx={{ listStyle: "disc", pl: 4, pb: 0 }}>{children}</List>
         ),
         li: ({ children }) => (
-          <ListItem sx={{ display: "list-item", py: "2px" }}>
+          <ListItem sx={{ display: "list-item", py: "0px" }}>
             <ListItemText primary={children} sx={{ my: 0 }} />
           </ListItem>
         ),

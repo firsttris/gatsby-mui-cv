@@ -14,7 +14,14 @@ export const Chips: React.FC<Props> = ({ skills, mb, mt }) => {
         <Chip
           key={index}
           label={label}
-          sx={{ mx: "2px", my: "3px", height: "22px" }}
+          sx={{
+            mx: "2px",
+            my: "3px",
+            height: "22px",
+            backgroundColor: "white",
+            border: "1px solid black",
+            borderRadius: "6px",
+          }}
         />
       ))}
     </Box>
