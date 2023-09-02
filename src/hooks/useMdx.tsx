@@ -5,13 +5,14 @@ import Description_EN from "./../mdx/en/description.mdx";
 import OpenSourceDE from "./../mdx/de/open-source.mdx";
 import OpenSourceEN from "./../mdx/en/open-source.mdx";
 import Skills_EN from "./../mdx/en/skills.mdx";
+import Skills_DE from "./../mdx/de/skills.mdx";
 import { useLocation } from "@reach/router";
 
 const mdx = {
   de: {
     Description: Description_DE,
     Projects: Projects_DE,
-    Skills: Skills_EN,
+    Skills: Skills_DE,
     OpenSource: OpenSourceDE,
   },
   en: {
