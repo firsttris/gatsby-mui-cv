@@ -5,7 +5,7 @@ import { ProfileHeader } from "./profileHeader";
 import "./global.css";
 
 export const CV = () => {
-  const { Projects, Description, Skills, OpenSource } = useMdx();
+  const { Projects, Description, Skills, OpenSource, Footer } = useMdx();
 
   return (
     <Layout>
@@ -28,18 +28,8 @@ export const CV = () => {
         <Box>
           <OpenSource />
         </Box>
-        <Box display="flex" justifyContent={"center"}>
-          <Typography variant="caption">
-            This CV is made with Gatsby, React, MUI, MDX and GraphQL check out
-            the{" "}
-            <Link
-              referrerPolicy="no-referrer"
-              target="_blank"
-              href="https://github.com/firsttris/gatsby-cv"
-            >
-              Source Code
-            </Link>
-          </Typography>
+        <Box display="flex" flexDirection="column" alignItems="center">
+          <Footer />
         </Box>
       </Container>
     </Layout>
