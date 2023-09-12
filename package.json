@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "gatsby-mui-cv",
+  "homepage": "https://teufel-it.de",
   "author": "Tristan Teufel",
   "keywords": [
     "gatsby"
@@ -29,6 +30,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.2",
     "gatsby": "^5.12.3",
+    "gatsby-plugin-cname": "^1.0.0",
     "gatsby-plugin-emotion": "^8.12.0",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
