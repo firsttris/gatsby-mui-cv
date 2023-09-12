@@ -6,6 +6,8 @@ import OpenSourceDE from "./../mdx/de/open-source.mdx";
 import OpenSourceEN from "./../mdx/en/open-source.mdx";
 import Skills_EN from "./../mdx/en/skills.mdx";
 import Skills_DE from "./../mdx/de/skills.mdx";
+import Footer_EN from "./../mdx/en/footer.mdx";
+import Footer_DE from "./../mdx/de/footer.mdx";
 import { useLocation } from "@reach/router";
 
 const mdx = {
@@ -14,12 +16,14 @@ const mdx = {
     Projects: Projects_DE,
     Skills: Skills_DE,
     OpenSource: OpenSourceDE,
+    Footer: Footer_DE
   },
   en: {
     Description: Description_EN,
     Projects: Projects_EN,
     Skills: Skills_EN,
     OpenSource: OpenSourceEN,
+    Footer: Footer_EN
   },
 };
 
