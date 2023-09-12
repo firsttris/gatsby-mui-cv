@@ -1,7 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-  pathPrefix: "/gatsby-mui-cv",
   siteMetadata: {
     title: "Tristan Teufel CV",
     siteUrl: `https://cv.teufel-it.de`,
