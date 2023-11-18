@@ -7,11 +7,17 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { styled } from "@mui/system";
 import { useLocation } from "@reach/router";
 
-const ContainerBox = styled(Box)({
+const ContainerBox = styled(Box)(({ theme }) => ({
   display: "flex",
-});
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+  },
+  '@media print': {
+    flexDirection: 'row'
+  }
+}));
 
-const ImageBox = styled(Box)({ borderRadius: "5px" });
+const ImageBox = styled(Box)({ borderRadius: "5px", display: 'inline-flex' });
 
 const BoxWithIcon = styled(Box)({
   display: "flex",
@@ -44,28 +50,24 @@ export const ProfileHeader = () => {
   const isDe = pathname.includes("/de/");
   return (
     <ContainerBox>
-      <ImageBox boxShadow={4}>
-        <StaticImage
-          src="../images/profil.png"
-          alt="me"
-          placeholder="blurred"
-          layout="fixed"
-          height={225}
-          width={240}
-          style={{
-            minWidth: 240,
-            borderRadius: "5px",
-          }}
-        />
-      </ImageBox>
+      <Box display="flex" justifyContent="center">
+        <ImageBox boxShadow={4}>
+          <StaticImage
+            src="../images/profil.png"
+            alt="me"
+            placeholder="blurred"
+            layout="fixed"
+            height={225}
+            width={240}
+            style={{
+              minWidth: 240,
+              borderRadius: "5px",
+            }}
+          />
+        </ImageBox>
+      </Box>
       <ContentBox>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            textAlign: "center",
-          }}
-        >
+        <Box textAlign="center" display="flex" flexDirection="column">
           <Typography variant="h3" sx={{ textTransform: "uppercase" }}>
             Tristan Teufel
           </Typography>

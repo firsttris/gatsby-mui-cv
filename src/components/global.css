@@ -1,6 +1,5 @@
 @media print {
     @page {
         size: portrait;
-
     }
 }

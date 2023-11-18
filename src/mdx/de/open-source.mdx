@@ -4,26 +4,36 @@ locale: "de"
 ---
 
 import { Chips } from './../../components/chips.tsx'
-import { PageBreak } from './../../components/pageBreak.tsx'
+import { PageBreakBefore } from '../../components/pageBreakBefore.tsx'
+import { AvoidPageBreakInside } from '../../components/avoidPageBreakInside.tsx'
 import { Divider, Box } from "@mui/material";
 
-<PageBreak/>
+<PageBreakBefore/>
 <Box id="openSource"/>
 # Open-Source Software-Entwicklung
 
 <Divider sx={{ margin: "5px 0px 10px 0px"}}/>
 
+<AvoidPageBreakInside>
 ## Optimierung von Jest Testing in Visual Studio Code mit VSCode-Jest-Runner
 #### 12/2017 - heute | [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) | [Github Repository](https://github.com/firsttris/vscode-jest-runner.git)
 
-[VSCode-Jest-Runner](https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner) konzentriert sich speziell auf die Ausführung oder das Debuggen eines bestimmten Tests oder einer bestimmten Testsuite. 
-Im Gegensatz dazu führt [VSCode-Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) Ihre aktuelle Testsuite jedes Mal aus, wenn Sie diese ändern.
+Jest Runner ist eine Visual Studio Code Erweiterung, die es ermöglicht, einzelne Jest Tests oder Test-Suiten einfach auszuführen oder zu debuggen. Jest ist ein beliebtes JavaScript-Test-Framework, das von Facebook verwendet wird. Diese Erweiterung bietet folgende Funktionen:
+
+- Run & Debug Jest Tests aus dem Kontextmenü, CodeLens oder der Befehlspalette
+- Unterstützung für yarn & vscode workspaces (monorepo)
+- Dynamische Jest-Konfigurationsauflösung
+- Yarn 2 pnp Unterstützung
+- CRA & ähnliche Abstraktionen Unterstützung
+- Umfangreiche Anpassungsmöglichkeiten
+
 <br></br>
-Jest Runner – ist die empfohlene Erweiterung für nrwl's NX-Tools mit 896,604 Installationen und einer 5-Sterne-Bewertung im Visual Studio Marketplace. Auf GitHub verzeichnet es 231 Sterne, beteiligt sind 3 Entwickler und 38 Mitwirkende.
+Jest Runner – ist seit 2020 eine empfohlene Erweiterung von [NX](https://nx.dev/) mit über 1 Million Installationen und einer 5-Sterne-Bewertung im Visual Studio Marketplace.
 
 <Chips mb="30px" mt="10px" skills="TypeScript, NodeJs, VS Code API, Github, Jest, Babel, jest-editor-support"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## SendToKodi ermöglicht es Nutzern, Videostreams von verschiedenen Websites direkt auf Kodi zu streamen.
 #### 01/2016 - heute | [Github Repository](https://github.com/firsttris/plugin.video.sendtokodi)
 
@@ -40,8 +50,9 @@ Dieses Projekt umfasst mehrere maßgebliche Komponenten, die dazu beitragen, Vid
 Dieses Projekt hat in der Entwicklergemeinschaft Beachtung gefunden, was sich in einer beachtlichen Anzahl von 105 Sternen auf GitHub widerspiegelt. Zwei engagierte Mitarbeiter und elf Mitwirkende haben dazu beigetragen, SendToKodi zu einem vielseitigen und erfolgreichen Multimedia-Projekt zu machen."
 
 <Chips mb="30px" mt="10px" skills="Phyton, Swift, TypeScript, React, Github Actions, Github, Kodi"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Entwicklung eines benutzerfreundlichen Zeiterfassungstools mit ReactJS und LowDB
 #### 01/2018 - heute | [Github Repository](https://github.com/firsttris/react-track)
 Unser Projekt bestand darin, ein einfaches und effizientes Zeiterfassungstool zu entwickeln, das auf modernen Webtechnologien basiert und gleichzeitig erschwinglich ist. Ein Kunde hatte den Bedarf nach einer benutzerfreundlichen Zeiterfassungsanwendung geäußert, die sowohl auf Desktop- als auch auf Mobilgeräten nahtlos funktioniert.
@@ -59,3 +70,4 @@ Die wichtigsten Aspekte unseres Projekts sind wie folgt:
 Insgesamt hat unser Zeiterfassungstool die Art und Weise, wie diese kleinen Unternehmen ihre Arbeitszeiten verwalten, erheblich vereinfacht und optimiert. Es bietet eine kostengünstige und effiziente Lösung, um die Arbeitszeiten der Mitarbeiter zu überwachen und Arbeitsberichte zu erstellen."
 
 <Chips mb="30px" mt="10px" skills="TypeScript, React, Github Actions, Apollo, GraphQL, Reactstrap, Bootstrap 4, recharts, nodejs, lowDb"/>
+</AvoidPageBreakInside>

@@ -1,16 +1,16 @@
 import { Box, Chip } from "@mui/material";
 
 interface Props {
-  skills: string;
+  skills: string | string[];
   mb?: string;
   mt?: string;
 }
 
 export const Chips: React.FC<Props> = ({ skills, mb, mt }) => {
-  const labelsAsArray = skills ? skills.split(",") : [];
+  const skillsArray = Array.isArray(skills) ? skills : skills.split(",");
   return (
     <Box sx={{ mb, mt }}>
-      {labelsAsArray.map((label, index) => (
+      {skillsArray.map((label, index) => (
         <Chip
           key={index}
           label={label}

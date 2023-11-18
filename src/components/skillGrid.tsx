@@ -3,7 +3,7 @@ import { Chips } from "./chips";
 
 interface SkillGridProps {
   title: string;
-  skills: string;
+  skills: string[];
 }
 
 export const SkillGrid = ({ skills, title }: SkillGridProps) => {

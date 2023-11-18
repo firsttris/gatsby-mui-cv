@@ -14,7 +14,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <MDXProvider
       components={{
         // Map HTML element tag to React component
-        p: ({ children }) => <Typography>{children}</Typography>,
+        p: ({ children }) => <Typography sx={{ fontSize: '14px'}}>{children}</Typography>,
         h1: ({ children }) => (
           <Typography fontWeight={500} sx={{ fontSize: "25px" }}>
             {children}
@@ -36,7 +36,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
         ),
         li: ({ children }) => (
           <ListItem sx={{ display: "list-item", py: "0px" }}>
-            <ListItemText primary={children} sx={{ my: 0 }} />
+            <ListItemText primary={children} sx={{ my: 0 }} primaryTypographyProps={{fontSize: '14px'}}  />
           </ListItem>
         ),
         a: ({ children, href }) => (

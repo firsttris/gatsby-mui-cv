@@ -4,15 +4,32 @@ locale: "en"
 ---
 
 import { Chips } from './../../components/chips.tsx'
-import { PageBreak } from './../../components/pageBreak.tsx'
+import { PageBreakBefore } from '../../components/pageBreakBefore.tsx'
+import { AvoidPageBreakInside } from '../../components/avoidPageBreakInside.tsx'
 import { Divider } from "@mui/material"
 
-<PageBreak/>
+<PageBreakBefore/>
 
 # Project experience
 
 <Divider sx={{ margin: "5px 0px 10px 0px"}}/>
 
+<AvoidPageBreakInside>
+## Test automation with Cypress and Jest for web applications in the energy sector
+RWE AG
+### 09/2023 - today in Essen/DE | freelance via Soorce | Scrum | Remote & On Site
+### Position: Test Automation Specialist
+
+- Development of Cypress frontend integration tests.
+- Creation of unit tests with Jest.
+- Integration of TypeScript and Cypress in the CI/CD pipeline.
+- Setting up a solution for local and shared Cypress Commands in an nx monorepo.
+- Test-driven development of new components with Angular 17.
+
+<Chips mb="30px" mt="10px" skills="TypeScript, Angular 17, Angular-Material, NX, Cypress, Jest, MongoDb, GraphQL, Apollo, Amazon ECS, MSAL (Microsoft Authenticator Library), Azure"/>
+</AvoidPageBreakInside>
+
+<AvoidPageBreakInside>
 ## Implementation of an interactive chat system for a virtual assistant using ChatGPT
 CTREAM GmbH
 ### 07/2023 - 08/2023 in Mainz/DE | freelancing via freelancermap.de | Scrum | Remote
@@ -26,7 +43,9 @@ CTREAM GmbH
 - Websocket integration with a Python backend for real-time communication.
 
 <Chips mb="30px" mt="10px" skills="TypeScript, React, NextJs, MUI, React-Query, VS Code, Styled-Components, WebSocket, Python, ChatGPT, AWS API-Gateway, AWS Dynamo DB, AWS S3"/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Creation of user interfaces in the field of telecommunications surveillance
 ATIS® Systems GmbH
 ### 10/2022 - 06/2023 in Bad Homburg/DE | freelancing via Solcom GmbH | Kanban | Remote & On-Site
@@ -40,8 +59,9 @@ ATIS® Systems GmbH
 - Integration of a Jenkins pipeline with Gitlab and Rocket Chat to streamline the development and communication process in the team.
 
 <Chips mb="30px" mt="10px" skills="TypeScript,React,Cypress,MUI,React-Query,VS Code,React-Beautiful-Dnd,OpenAPI,NX-Tools,Leaflet,recharts" />
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Participation in the development of the HConnect product suite from Heidelberg Materials AG
 Heidelberg Cement AG - today Heidelberg Materials AG
 ### 01/2021 - 09/2022 in Heidelberg/DE | freelancing via Etengo AG | Scrum | Remote & On-Site
@@ -57,8 +77,10 @@ Heidelberg Cement AG - today Heidelberg Materials AG
 - Conducted a Proof of Concept (POC) to migrate from Yarn1 to Yarn2 using Zero Install and pnp.
 - Development of Node.js build scripts using Azure CLI and Azcopy to automate deployment processes.
 
-<Chips mb="30px" mt="10px" skills="Azure Cloud,CRA,VS Code,Typescript,React,Redux,React-Testing-Library,GraphQL,Jest,MUI,Cypress,Jira,X-Ray,Confluence,Gitlab,nginx"/>
+<Chips mb="30px" mt="10px" skills="Azure Cloud,CRA,VS Code,Typescript,React,Redux,React-Testing-Library,React-Query,SWR,GraphQL,Jest,MUI,Cypress,Jira,X-Ray,Confluence,Gitlab,nginx"/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Creation of the Klarsolars solar panel configurator
 Klarsolar GmbH
 ### 10/2020 - 12/2020 in Stuttgart/DE | freelancing via Pixelschupser GmbH | Scrum | Remote
@@ -71,10 +93,10 @@ Klarsolar GmbH
 - Successful data migration of the old configurator to seamlessly transfer existing data to the new system.
 - Integration of a GraphQL backend with the Apollo client to enable powerful and flexible data query and manipulation.
 
-<Chips mb="30px" mt="10px" skills="TypeScript, Angular 10, Angular Material, Tailwind CSS, GraphQL, Apollo Client"/>
-<PageBreak/>
+<Chips mb="30px" mt="10px" skills="TypeScript, Angular 10, Angular Material, Tailwind CSS, GraphQL, Apollo, GraphQL"/>
+</AvoidPageBreakInside>
 
-
+<AvoidPageBreakInside>
 ## Modernization of user interface for SupplyOn AG in the automotive industry
 Seeburger AG
 ### 01/2020 - 09/2020 in Bretten/DE | freelancing via it-experts | Kanban | On-Site
@@ -89,7 +111,9 @@ Seeburger AG
 - Creation of a custom filter for AgGrid to effectively filter and display data.
 
 <Chips mb="30px" mt="10px" skills="Java 8,OpenAPI,Gerrit,IntelliJ IDEA,Typescript,React,Redux,React-Testing-Library,Jest,Material-ui,AgGrid,Jira,Confluence,BitBucket "/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Development of chat components for TeamViewer chat
 Teamviewer GmbH
 ### 10/2019 - 12/2019 in Goeppingen/DE | freelancing via gulp.de | Scrum | Remote & On-Site
@@ -101,8 +125,9 @@ Teamviewer GmbH
 - Implementation of a technological approach for lazy loading of an emoji picker in order to optimize the application's loading times and performance.
 
 <Chips mb="30px" mt="10px" skills="KnockoutJs,Typescript,Webpack,C++,VisualStudio2017,Git,Jira,Confluence"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Conception and development of a configurator for drugstores in cooperation with Procter & Gamble
 Procter & Gamble (P&G)
 ### 07/2019 - 09/2019 in Karlsruhe/DE | freelancing via typzwo GmbH | Kanban | Remote
@@ -114,7 +139,9 @@ Procter & Gamble (P&G)
 - Development of special components for the configurator to optimize user interaction and experience in the application.
 
 <Chips mb="30px" mt="10px" skills="VueJs,Vuex,Javascript,Webpack,PHP,MySQL,Laravel,Git,Jira,Confluence"/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Dashboards for Daimler AG: Visualization of metrics and key figures in production
 ETECTURE GmbH
 ### 10/2017 - 06/2019 in Karlsruhe/DE | freelancing via xing.de | Kanban | Remote & On-Site
@@ -130,7 +157,9 @@ ETECTURE GmbH
 - Set up Docker clusters with reverse proxy (Traefik) to improve application scalability and performance.
 
 <Chips mb="30px" mt="10px" skills="React,Redux,Reselect,Immutable.js,Typescript,Jest,Webpack,NodeJs,PostGres,Docker,Traefik,Sequilize,REST,Swagger,OpenAPI,Git,Jira,Confluence"/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Participation in the development of a new game launcher for Gameforge AG
 Gameforge AG
 ### 05/2017 - 09/2017 in Karlsruhe/DE | freelancing via Gulp.de | Scrum | On-Site
@@ -143,8 +172,9 @@ Gameforge AG
 - Extension of a webpack job for dynamic configuration injection at runtime in the frontend to improve the flexibility and customizability of the application.
 
 <Chips mb="30px" mt="10px" skills="Angular 1.x,React,Redux,REST,Docker,Kubernetes,NodeJs,Git,Jira,Confluence,Webpack,Swagger,OpenAPI"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Backend development of an innovative scheduling system for medium-sized companies
 Timify - today Termin App GmbH 
 ### 01/2017 - 04/2017 in Munich/DE | freelancing via Etengo AG | Scrum | Remote & On-Site
@@ -157,7 +187,9 @@ Timify - today Termin App GmbH
 - Development of a new Mongo DB layer with Promise support to make data access and manipulation more efficient and ensure smooth data management.
 
 <Chips mb="30px" mt="10px" skills="JavaScript,NodeJs,MongoDb,HapiJs,Lout,Lab,Jira,Confluence,Git"/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Composition of Angular components and deployment in a design system library
 Cyber Manufactory GmbH
 ### 03/2016 - 12/2016 in Karlsruhe/DE | freelancing via Cyperforum e.V. | Scrum | On-Site
@@ -169,8 +201,9 @@ Cyber Manufactory GmbH
 - Performing PHP and Wordpress development to successfully implement and customize various web projects.
 
 <Chips mb="30px" mt="10px" skills="Angular 1.x,Webstorm,JavaScript,jQuery,PHP,Wordpress,JsPlump,Git,BitBucket"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Java 8 development in a Java Enterprise application for receivables management at arvato
 arvato Financial Solutions - Bertelsmann SE & Co. KGaA
 ### 01/2015 - 12/2015 in Baden-Baden/DE | Fixed Job | Waterfall | On-Site
@@ -185,8 +218,9 @@ arvato Financial Solutions - Bertelsmann SE & Co. KGaA
 - Comprehensive documentation of the project in Confluence to ensure clear and structured communication within the team.
 
 <Chips mb="30px" mt="10px" skills="Eclipse,Maven,Java,Java 8,JUnit,Confluence,Jira,Oracle SQL Developer,Subversion,Groovy"/>
-<PageBreak/>
+</AvoidPageBreakInside>
 
+<AvoidPageBreakInside>
 ## Software development and eterprise application integration at ec4u expert consulting AG
 ec4u expert consulting AG - today DIGITALL
 ### 09/2012 - 12/2014 in Karlsruhe/DE | Fixed Job  | Scrum | On-Site
@@ -207,3 +241,4 @@ ec4u expert consulting AG - today DIGITALL
 - Evaluation of Google Payment APIs (Google Checkout and Google Wallet) by developing a mobile web application.
 
 <Chips mb="30px" mt="10px" skills="JavaScript,jQuery,jQuery UI,Oracle ADF,SoapUI,Oracle JDeveloper,Oracle SQLDeveloper,Java,JavaEE,Oracle SOA Suite,PhoneGap,Cordova,REST"/>
+</AvoidPageBreakInside>
