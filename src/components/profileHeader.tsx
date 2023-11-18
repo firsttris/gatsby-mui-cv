@@ -5,9 +5,11 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { styled } from "@mui/system";
-import { useLocation } from "@reach/router";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const ContainerBox = styled(Box)(({ theme }) => ({
+  marginTop: "20px",
   display: "flex",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
@@ -17,21 +19,24 @@ const ContainerBox = styled(Box)(({ theme }) => ({
   }
 }));
 
-const ImageBox = styled(Box)({ borderRadius: "5px", display: 'inline-flex' });
+const ImageBox = styled(Box)(({ theme }) => ({ borderRadius: "5px", display: 'inline-flex' }));
 
 const BoxWithIcon = styled(Box)({
   display: "flex",
   gap: "5px",
 });
 
-const ContentBox = styled(Box)({
+const ContentBox = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   gap: "20px",
   m: "10px",
   width: "100%",
-});
+  [theme.breakpoints.down("md")]: {
+    marginTop: "20px",
+  }
+}));
 
 const LinkGrid = styled(Box)({
   display: "flex",
@@ -46,8 +51,10 @@ const LinkColumn = styled(Box)({
 });
 
 export const ProfileHeader = () => {
-  const { pathname } = useLocation();
-  const isDe = pathname.includes("/de/");
+  
+  const lang = getLangFromUrl();
+  const t = useTranslations(lang);
+
   return (
     <ContainerBox>
       <Box display="flex" justifyContent="center">
@@ -72,12 +79,10 @@ export const ProfileHeader = () => {
             Tristan Teufel
           </Typography>
           <Typography variant="h5">
-            {isDe ? "Senior Software Entwickler" : "Senior Software Developer"}
+            {t('business-title')}
           </Typography>
           <Typography variant="caption">
-            {isDe
-              ? "Wirtschaftsinformatik (B.Sc.)"
-              : "Business Informatics (B.Sc.)"}
+            {t('academic-title')}
           </Typography>
         </Box>
         <LinkGrid>
