@@ -13,15 +13,15 @@ export const Skills = () => {
         {
 
             title: t('languages'),
-            skills: ["TypeScript (10)", "JavaScript (10)", "NodeJs (9)", "Python (7)", "Java (7)"]
+            skills: ["TypeScript / JavaScript (10)", "NodeJs (9)", "Python (7)", "Java (7)", "Go (7)"]
         },
         {
             title: t('libraries'),
-            skills: ["React (10)", "SolidJs (10)", "Svelte (8)", "Angular (8)", "Vue (8)", "NextJs (9)", "NX (10)"]
+            skills: ["React (10)", "Solid.js (9)", "Gatsby (9)", "Astro (9)", "Svelte (7)", "Angular (8)", "Vue (7)", "NextJs (9)", "NX (10)"]
         },
         {
             title: t('styling'),
-            skills: ["Material-UI (MUI) (10)", "Styled-Components (9)", "CSS-Modules (8)", "TailwindCSS (8)"]
+            skills: ["CSS/SCSS (8)", "Material-UI (MUI) (10)", "Styled-Components (10)", "Tailwind CSS (8)"]
         },
         {
             title: t('testing'),
@@ -41,7 +41,7 @@ export const Skills = () => {
         },
         {
             title: t('protocols'),
-            skills: ["REST (10)", "JSON-RPC (10)", "WebSocket (10)", "Open-API (10)", "GraphQL (8)"]
+            skills: ["REST (10)", "JSON-RPC (9)", "WebSocket (8)", "Open-API (9)", "GraphQL (8)"]
         },
         {
             title: t('ide'),
@@ -49,7 +49,7 @@ export const Skills = () => {
         },
         {
             title: t('projectMethology'),
-            skills: ["Scrum (10)", "Kanban (10)", "Agile (10)", "Waterfall (9)"]
+            skills: ["Scrum (9)", "Kanban (9)", "Agile (9)", "Waterfall (9)"]
         }
     ]
 

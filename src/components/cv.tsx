@@ -1,4 +1,4 @@
-import { Box, Container, Link, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import { useMdx } from "../hooks/useMdx";
 import { Layout } from "./layout";
 import { ProfileHeader } from "./profileHeader";
