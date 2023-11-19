@@ -21,7 +21,7 @@ export const Skills = () => {
         },
         {
             title: t('styling'),
-            skills: ["Material-UI (MUI) (10)", "Styled-Components (10)", "CSS-Modules (8)", "TailwindCSS (8)"]
+            skills: ["Material-UI (MUI) (10)", "Styled-Components (9)", "CSS-Modules (8)", "TailwindCSS (8)"]
         },
         {
             title: t('testing'),
@@ -49,7 +49,7 @@ export const Skills = () => {
         },
         {
             title: t('projectMethology'),
-            skills: ["Scrum (10)", "Kanban (10)", "Agile (10)", "Waterfall (10)"]
+            skills: ["Scrum (10)", "Kanban (10)", "Agile (10)", "Waterfall (9)"]
         }
     ]
 
