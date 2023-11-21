@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { Chips, Skill } from "./ChipWithIcon";
+import { ChipsWithIcon, Skill } from "./ChipsWithIcon";
 
 
 interface SkillGridProps {
@@ -16,7 +16,7 @@ export const SkillGrid = ({ skills, title }: SkillGridProps) => {
         </Typography>
       </Box>
       <Box sx={{ maxWidth: "500px" }}>
-        <Chips skills={skills} />
+        <ChipsWithIcon skills={skills} />
       </Box>
     </Box>
   );

@@ -12,7 +12,7 @@ interface Props {
   skills: Skill[];
 }
 
-export const Chips: React.FC<Props> = ({ skills }) => {
+export const ChipsWithIcon: React.FC<Props> = ({ skills }) => {
 
   return (
     <Box>
