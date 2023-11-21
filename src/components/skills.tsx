@@ -13,43 +13,43 @@ export const Skills = () => {
         {
 
             title: t('languages'),
-            skills: ["TypeScript / JavaScript (10)", "NodeJs (9)", "Python (7)", "Java (7)", "Go (7)"]
+            skills: ["TypeScript / JavaScript", "NodeJs", "Python", "Java", "Go", "C#"]
         },
         {
             title: t('libraries'),
-            skills: ["React (10)", "Solid.js (9)", "Gatsby (9)", "Astro (9)", "Svelte (7)", "Angular (8)", "Vue (7)", "NextJs (9)", "NX (10)"]
+            skills: ["React", "Solid.js", "Gatsby", "Astro", "Svelte", "Angular", "Vue", "NextJs", "NX"]
         },
         {
             title: t('styling'),
-            skills: ["CSS/SCSS (8)", "Material-UI (MUI) (10)", "Styled-Components (10)", "Tailwind CSS (8)"]
+            skills: ["CSS/SCSS", "Material-UI (MUI)", "Styled-Components", "Tailwind CSS"]
         },
         {
             title: t('testing'),
-            skills: ["React-Testing-Library (10)", "Jest (10)", "Cypress (10)"]
+            skills: ["React-Testing-Library", "Jest", "Cypress", "Playwright"]
         },
         {
             title: t('databases'),
-            skills: ["MongoDB (8)", "SQL (9)"]
+            skills: ["MongoDB", "SQL"]
         },
         {
             title: t('integration'),
-            skills: ["Gitlab (10)", "Github (10)", "Linux (9)", "Docker (8)", "AWS (7)", "Azure (7)"]
+            skills: ["Gitlab", "Github", "Linux", "Docker", "AWS", "Azure"]
         },
         {
             title: t('bundlers'),
-            skills: ["Webpack (9)", "Vite (9)"]
+            skills: ["Webpack", "Vite"]
         },
         {
             title: t('protocols'),
-            skills: ["REST (10)", "JSON-RPC (9)", "WebSocket (8)", "Open-API (9)", "GraphQL (8)"]
+            skills: ["REST", "JSON-RPC", "WebSocket", "Open-API", "GraphQL"]
         },
         {
             title: t('ide'),
-            skills: ["VS Code (10)", "Jetbrains IntelliJ (8)"]
+            skills: ["VS Code", "Jetbrains IntelliJ"]
         },
         {
             title: t('projectMethology'),
-            skills: ["Scrum (9)", "Kanban (9)", "Agile (9)", "Waterfall (9)"]
+            skills: ["Scrum", "Kanban", "Agile", "Waterfall"]
         }
     ]
 
