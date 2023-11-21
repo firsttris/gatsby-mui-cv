@@ -3,10 +3,26 @@ name: "projects"
 locale: "de"
 ---
 
-import { Chips } from '../../components/Chips'
+import { ChipsWithIconAndMargin } from '../../components/ChipsWithIcon'
 import { PageBreakBefore } from '../../components/PageBreakBefore'
 import { AvoidPageBreakInside } from '../../components/AvoidPageBreakInside'
 import { Divider } from "@mui/material";
+import { 
+    skillsForRwe, 
+    skillsForCtream, 
+    skillsForAtis, 
+    skillsForHeidelbergCement, 
+    skillsForKlarsolar, 
+    skillsForSeeburger, 
+    skillsForTeamviewer, 
+    skillsForProctorAndGamble, 
+    skillsForDaimler, 
+    skillsForGameforge, 
+    skillsForTimify,
+    skillsForCybermanufaktur,
+    skillsForArvato,
+    skillsForEc4u
+    } from '../../components/Skills'
 
 <PageBreakBefore/>
 
@@ -26,7 +42,7 @@ RWE AG
 - Aufsetzen einer Lösung für lokale und geteilte Cypress Commands in einem nx monorepo.
 - Testgetriebene Entwicklung von neuen Componenten mit Angular 17.
 
-<Chips skills="TypeScript, Angular 17, Angular-Material, NX, Cypress, Jest, MongoDb, GraphQL, Apollo, Amazon ECS, MSAL (Microsoft Authenticator Library), Azure"/>
+<ChipsWithIconAndMargin skills={skillsForRwe} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -42,7 +58,7 @@ CTREAM GmbH
 - Bereitstellung des Output-Bundles als WebComponent für externe Websites.
 - Integration von Websockets mit einem Python-Backend für Echtzeitkommunikation.
 
-<Chips skills="TypeScript, React, NextJs, MUI, React-Query, VS Code, Styled-Components, WebSocket, Python, ChatGPT, AWS API-Gateway, AWS Dynamo DB, AWS S3"/>
+<ChipsWithIconAndMargin skills={skillsForCtream} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -58,7 +74,7 @@ ATIS® Systems GmbH
 - Anpassung von Material-UI (MUI)-Komponenten nach Kundenwünschen, um eine maßgeschneiderte Benutzeroberfläche zu bieten.
 - Integration einer Jenkins-Pipeline mit Gitlab und Rocket Chat zur Optimierung des Entwicklungs- und Kommunikationsprozesses im Team.
 
-<Chips skills="TypeScript,React,Cypress,MUI,React-Query,VS Code,React-Beautiful-Dnd,OpenAPI,NX,Leaflet,recharts,Jenkins"/>
+<ChipsWithIconAndMargin skills={skillsForAtis} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -77,7 +93,7 @@ Heidelberg Cement AG - heute Heidelberg Materials AG
 - Durchführung eines Proof of Concept (POC) zur Migration von Yarn1 zu Yarn2 mit Zero Install und pnp.
 - Entwicklung von Node.js-Buildskripten mit Azure CLI und Azcopy zur Automatisierung von Bereitstellungsprozessen.
 
-<Chips skills="Azure Cloud,CRA,VS Code,Typescript,React,Redux,React-Testing-Library,React-Query,SWR,GraphQL,Jest,MUI,Cypress,Jira,X-Ray,Confluence,Gitlab,nginx,NX"/>
+<ChipsWithIconAndMargin skills={skillsForHeidelbergCement} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -93,7 +109,7 @@ Klarsolar GmbH
 - Erfolgreiche Datenmigration des alten Konfigurators, um vorhandene Daten nahtlos in das neue System zu übertragen.
 - Integration eines GraphQL-Backends mit dem Apollo-Client, um eine leistungsfähige und flexible Datenabfrage und -manipulation zu ermöglichen.
 
-<Chips skills="TypeScript, Angular 10, Angular Material, Tailwind CSS, GraphQL, Apollo, GraphQL"/>
+<ChipsWithIconAndMargin skills={skillsForKlarsolar} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -110,7 +126,7 @@ Seeburger AG
 - Entwicklung von Webservices mit JAX-RS und Hinzufügen von OpenAPI-Annotationen, um eine saubere API-Dokumentation und -kommunikation sicherzustellen.
 - Erstellung eines individuellen Filters für AgGrid, um Daten effektiv zu filtern und anzuzeigen.
 
-<Chips skills="Java 8,OpenAPI,Gerrit,IntelliJ IDEA,Typescript,React,Redux,React-Testing-Library,Jest,Material-ui,AgGrid,Jira,Confluence,BitBucket"/>
+<ChipsWithIconAndMargin skills={skillsForSeeburger} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -124,7 +140,7 @@ Teamviewer GmbH
 - Entwickeln von speziellen Chatfunktionalitätskomponenten, die eine reibungslose Kommunikation in der Anwendung ermöglichen.
 - Umsetzung eines technologischen Ansatzes für das Lazy Loading eines Emoji Pickers, um die Ladezeiten und die Leistung der Anwendung zu optimieren.
 
-<Chips skills="KnockoutJs,Typescript,Webpack,C++,VisualStudio2017,Git,Jira,Confluence"/>
+<ChipsWithIconAndMargin skills={skillsForTeamviewer} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -138,7 +154,7 @@ Procter & Gamble (P&G)
 - Durchführung von Schemaerweiterungen in MySQL, um die Datenbankfunktionalität an die Anforderungen des Projekts anzupassen.
 - Entwicklung von speziellen Komponenten für den Konfigurator, um die Benutzerinteraktion und -erfahrung in der Anwendung zu optimieren.
 
-<Chips skills="VueJs,Vuex,Javascript,Webpack,PHP,MySQL,Laravel,Git,Jira,Confluence"/>
+<ChipsWithIconAndMargin skills={skillsForProctorAndGamble} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -156,7 +172,7 @@ ETECTURE GmbH
 - Erstellung von Docker Compose YAML-Build-Skripten zur effizienten Verwaltung der Containerisierung und Bereitstellung.
 - Einrichtung von Docker-Clustern mit Reverse Proxy (Traefik) zur Verbesserung der Skalierbarkeit und Leistungsfähigkeit der Anwendungen.
 
-<Chips skills="React,Redux,Reselect,Immutable.js,Typescript,Jest,Webpack,NodeJs,PostGres,Docker,Traefik,Sequilize,REST,Swagger,OpenAPI,Git,Jira,Confluence"/>
+<ChipsWithIconAndMargin skills={skillsForDaimler} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -171,7 +187,7 @@ Gameforge AG
 - Durchführung eines Proof of Concept (PoC) für die Migration einer Web-Applikation von Angular 1.x auf React, um die Modernisierung der Frontend-Technologie zu bewerten.
 - Erweiterung eines Webpack-Jobs zur dynamischen Konfigurationseinfügung zur Laufzeit im Frontend, um die Flexibilität und Anpassbarkeit der Anwendung zu verbessern.
 
-<Chips skills="Angular 1.x,React,Redux,REST,Docker,Kubernetes,NodeJs,Git,Jira,Confluence,Webpack,Swagger,OpenAPI"/>
+<ChipsWithIconAndMargin skills={skillsForGameforge} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -186,7 +202,7 @@ Timify - heute Termin App GmbH
 - Erstellung einer neuen Vorlage für Lout zur API-Dokumentation in Hapi.js, um Entwicklern eine klare und umfassende Dokumentation bereitzustellen.
 - Entwicklung einer neuen Mongo-DB-Schicht mit Promise-Unterstützung, um Datenzugriff und -manipulation effizienter zu gestalten und eine reibungslose Datenverwaltung sicherzustellen.
 
-<Chips skills="JavaScript,NodeJs,MongoDb,HapiJs,Lout,Lab,Jira,Confluence,Git"/>
+<ChipsWithIconAndMargin skills={skillsForTimify} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -200,7 +216,7 @@ Cyber Manufaktur GmbH
 - Entwicklung von Angular 1.x-Komponenten speziell für Kunden der Cyber Manufaktur GmbH, um individuelle Anforderungen zu erfüllen.
 - Durchführung von PHP- und Wordpress-Entwicklung, um verschiedene Webprojekte erfolgreich umzusetzen und anzupassen.
 
-<Chips skills="Angular 1.x,Webstorm,JavaScript,jQuery,PHP,Wordpress,JsPlump,Git,BitBucket"/>
+<ChipsWithIconAndMargin skills={skillsForCybermanufaktur} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -217,7 +233,7 @@ arvato Financial Solutions - Bertelsmann SE & Co. KGaA
 - Entwicklung von Groovy-Skripten für erweiterte Datentransformationen zur Optimierung von Datenverarbeitungsprozessen.
 - Umfassende Dokumentation des Projekts in Confluence, um eine klare und strukturierte Kommunikation innerhalb des Teams sicherzustellen.
 
-<Chips skills="Eclipse,Maven,Java,Java 8,JUnit,Confluence,Jira,Oracle SQL Developer,Subversion,Groovy"/>
+<ChipsWithIconAndMargin skills={skillsForArvato} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -240,5 +256,5 @@ ec4u expert consulting AG - heute DIGITALL
 - Entwicklung einer mobilen Webanwendung zur Abbildung von Genehmigungsanträgen von Oracle Siebel CRM.
 - Evaluierung der Google Payment-APIs (Google Checkout und Google Wallet) durch Entwicklung einer mobilen Webanwendung.
 
-<Chips skills="JavaScript,jQuery,jQuery UI,Oracle ADF,SoapUI,Oracle JDeveloper,Oracle SQLDeveloper,Java,JavaEE,Oracle SOA Suite,PhoneGap,Cordova,REST"/>
+<ChipsWithIconAndMargin skills={skillsForEc4u} />
 </AvoidPageBreakInside>

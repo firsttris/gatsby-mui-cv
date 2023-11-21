@@ -3,10 +3,11 @@ name: "open-source"
 locale: "en"
 ---
 
-import { Chips } from '../../components/Chips'
+import { ChipsWithIconAndMargin } from '../../components/ChipsWithIcon'
 import { PageBreakBefore } from '../../components/PageBreakBefore'
 import { AvoidPageBreakInside } from '../../components/AvoidPageBreakInside'
 import { Divider, Box } from "@mui/material";
+import { skillsForJestRunner, skillsForSendToKodi, skillsForReactTrack } from '../../components/Skills'
 
 <PageBreakBefore/>
 <Box id="openSource"/>
@@ -30,7 +31,7 @@ Jest Runner is a Visual Studio Code extension that allows you to easily run or d
 <br></br>
 Jest Runner – is a recommended extension by [NX](https://nx.dev/) since 2020 with over 1 million installs and a 5-star rating in the Visual Studio Marketplace.
 
-<Chips mb="30px" mt="10px" skills="TypeScript, NodeJs, VS Code API, Github, Jest, Babel, jest-editor-support"/>
+<ChipsWithIconAndMargin skills={skillsForJestRunner} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -48,7 +49,7 @@ This project includes several instrumental components that help extract video st
 <br></br>
 This project has garnered attention from the developer community, reflected in a whopping 105 stars on GitHub. Two dedicated employees and eleven contributors have helped make SendToKodi a diverse and successful multimedia project."
 
-<Chips mb="30px" mt="10px" skills="Phyton, Swift, TypeScript, React, Github Actions, Github, Kodi"/>
+<ChipsWithIconAndMargin skills={skillsForSendToKodi} />
 </AvoidPageBreakInside>
 
 <AvoidPageBreakInside>
@@ -68,5 +69,5 @@ The main aspects of our project are as follows:
 Overall, our time tracking tool has greatly simplified and streamlined the way these small businesses manage their hours. It offers a cost-effective and efficient solution to monitor employee working hours and generate work reports."
 
 
-<Chips mb="30px" mt="10px" skills="TypeScript, React, Github Actions, Apollo, GraphQL, Reactstrap, Bootstrap 4, recharts, nodejs, lowDb"/>
+<ChipsWithIconAndMargin skills={skillsForReactTrack} />
 </AvoidPageBreakInside>

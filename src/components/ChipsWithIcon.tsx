@@ -1,5 +1,6 @@
 import { Icon } from "@iconify-icon/react";
 import { Box, Chip, Link, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 
 export interface Skill {
   name: string
@@ -12,10 +13,10 @@ interface Props {
   skills: Skill[];
 }
 
-export const ChipsWithIcon: React.FC<Props> = ({ skills }) => {
+export const ChipsWithIcon: React.FC<Props> = ({ skills, ...otherProps }) => {
 
   return (
-    <Box>
+    <Box {...otherProps}>
       {skills.map((skill, index) => (
         <Link href={skill.website} target="_blank" rel="noopener">
                 <Chip
@@ -45,3 +46,8 @@ export const ChipsWithIcon: React.FC<Props> = ({ skills }) => {
     </Box>
   );
 };
+
+export const ChipsWithIconAndMargin = styled(ChipsWithIcon)({
+  marginTop: "10px",
+  marginBottom: '30px'
+});
