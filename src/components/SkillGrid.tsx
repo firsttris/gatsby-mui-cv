@@ -1,9 +1,10 @@
 import { Box, Typography } from "@mui/material";
-import { Chips } from "./chips";
+import { Chips, Skill } from "./ChipWithIcon";
+
 
 interface SkillGridProps {
   title: string;
-  skills: string[];
+  skills: Skill[];
 }
 
 export const SkillGrid = ({ skills, title }: SkillGridProps) => {

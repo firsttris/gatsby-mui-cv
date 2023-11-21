@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
 import { useMdx } from "../hooks/useMdx";
-import { Layout } from "./layout";
-import { ProfileHeader } from "./profileHeader";
+import { Layout } from "./Layout";
+import { ProfileHeader } from "./ProfileHeader";
 import "./global.css";
 
 export const CV = () => {

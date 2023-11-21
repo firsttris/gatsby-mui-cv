@@ -1,10 +1,7 @@
 import { Box, Link, Typography } from "@mui/material";
 import { StaticImage } from "gatsby-plugin-image";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { styled } from "@mui/system";
+import { Icon } from '@iconify-icon/react';
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
@@ -19,10 +16,15 @@ const ContainerBox = styled(Box)(({ theme }) => ({
   }
 }));
 
+const IconWithSize = styled(Icon)({
+  fontSize: '22px'
+})
+
 const ImageBox = styled(Box)(({ theme }) => ({ borderRadius: "5px", display: 'inline-flex' }));
 
 const BoxWithIcon = styled(Box)({
   display: "flex",
+  alignItems: "center",
   gap: "5px",
 });
 
@@ -51,7 +53,7 @@ const LinkColumn = styled(Box)({
 });
 
 export const ProfileHeader = () => {
-  
+
   const lang = getLangFromUrl();
   const t = useTranslations(lang);
 
@@ -88,7 +90,7 @@ export const ProfileHeader = () => {
         <LinkGrid>
           <LinkColumn>
             <BoxWithIcon>
-              <EmailIcon />
+              <IconWithSize icon="openmoji:envelope" />
               <Link
                 href="mailto:info@teufel-it.de"
                 underline="none"
@@ -99,7 +101,7 @@ export const ProfileHeader = () => {
               </Link>
             </BoxWithIcon>
             <BoxWithIcon>
-              <PhoneIcon />
+              <IconWithSize icon="openmoji:mobile-phone" />
               <Link
                 href="tel:+49 176 457 44166"
                 underline="none"
@@ -112,7 +114,7 @@ export const ProfileHeader = () => {
           </LinkColumn>
           <LinkColumn>
             <BoxWithIcon>
-              <GitHubIcon />
+              <IconWithSize icon="openmoji:github" />
               <Link
                 href="http://github.com/firsttris"
                 underline="none"
@@ -123,7 +125,7 @@ export const ProfileHeader = () => {
               </Link>
             </BoxWithIcon>
             <BoxWithIcon>
-              <LinkedInIcon />
+              <IconWithSize icon="openmoji:linkedin" />
               <Link
                 href="http://de.linkedin.com/in/tristanteufel"
                 underline="none"
