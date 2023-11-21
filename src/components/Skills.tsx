@@ -80,7 +80,7 @@ export const integration = {
     gerrit: { name: "Gerrit", icon: 'cib:gerrit', website: "https://www.gerritcodereview.com/" },
     bitbucket: { name: "Bitbucket", icon: 'logos:bitbucket', website: "https://bitbucket.org/" },
     traefik: { name: "Traefik", icon: 'devicon:traefikproxy', website: "https://traefik.io/" },
-    kubernetes: { name: "Kubernetes", icon: 'vscode-icons:file-type-kubernetes', website: "https://kubernetes.io/" },
+    kubernetes: { name: "Kubernetes", icon: 'logos:kubernetes', website: "https://kubernetes.io/" },
     maven: { name: "Maven", icon: 'vscode-icons:file-type-maven', website: "https://maven.apache.org/" },
     svn: { name: "Subversion", icon: 'logos:subversion', website: "https://subversion.apache.org/" },
 }
