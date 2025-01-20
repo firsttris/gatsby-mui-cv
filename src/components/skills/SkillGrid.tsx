@@ -1,6 +1,5 @@
-import { FC } from "react";
 import styled from "@emotion/styled";
-import { ChipsWithIcon, Skill } from "./ChipsWithIcon";
+import { ChipsWithIcon, Skill } from "../ChipsWithIcon";
 
 interface SkillGridProps {
   title: string;
@@ -26,7 +25,7 @@ const SkillsBox = styled.div({
   maxWidth: "500px",
 });
 
-export const SkillGrid: FC<SkillGridProps> = ({ skills, title }) => {
+export const SkillGrid = ({ skills, title }: SkillGridProps) => {
   return (
     <Container>
       <TitleBox>
