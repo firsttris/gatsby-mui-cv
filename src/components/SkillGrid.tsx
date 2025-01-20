@@ -1,23 +1,40 @@
-import { Box, Typography } from "@mui/material";
+import { FC } from "react";
+import styled from "@emotion/styled";
 import { ChipsWithIcon, Skill } from "./ChipsWithIcon";
-
 
 interface SkillGridProps {
   title: string;
   skills: Skill[];
 }
 
-export const SkillGrid = ({ skills, title }: SkillGridProps) => {
+const Container = styled.div({
+  display: "flex",
+  //alignItems: "top",
+});
+
+const TitleBox = styled.div({
+  marginTop: "2px",
+  minWidth: "100px",
+});
+
+const Title = styled.p({
+  fontSize: "12px",
+  margin: 0
+});
+
+const SkillsBox = styled.div({
+  maxWidth: "500px",
+});
+
+export const SkillGrid: FC<SkillGridProps> = ({ skills, title }) => {
   return (
-    <Box sx={{ display: "flex", alignItems: "top" }}>
-      <Box sx={{ mt: "2px", minWidth: "100px" }}>
-        <Typography variant="body1" sx={{ fontSize: "12px" }}>
-          {title}
-        </Typography>
-      </Box>
-      <Box sx={{ maxWidth: "500px" }}>
+    <Container>
+      <TitleBox>
+        <Title>{title}</Title>
+      </TitleBox>
+      <SkillsBox>
         <ChipsWithIcon skills={skills} />
-      </Box>
-    </Box>
+      </SkillsBox>
+    </Container>
   );
 };

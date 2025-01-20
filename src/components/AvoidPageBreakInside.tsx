@@ -1,7 +1,6 @@
-import { styled } from "@mui/system";
-import { Box } from "@mui/material";
+import styled from '@emotion/styled';
 
-const StyledBox = styled(Box)({
+const StyledDiv = styled.div({
   "@media print": {
     pageBreakInside: "avoid",
   },
@@ -13,5 +12,5 @@ interface AvoidPageBreakInsideProps
 }
 
 export const AvoidPageBreakInside = ({children}: AvoidPageBreakInsideProps) => {
-  return <StyledBox >{children}</StyledBox>;
+  return <StyledDiv>{children}</StyledDiv>;
 };

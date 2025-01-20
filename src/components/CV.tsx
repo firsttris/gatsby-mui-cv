@@ -1,37 +1,60 @@
-import { Box, Container } from "@mui/material";
 import { useMdx } from "../hooks/useMdx";
 import { Layout } from "./Layout";
 import { ProfileHeader } from "./ProfileHeader";
+import styled from "@emotion/styled";
 import "./global.css";
+
+const StyledContainer = styled.div({
+  maxWidth: "852px", //md
+  display: "flex",
+  flexDirection: "column",
+  margin: "0 auto",
+  paddingLeft: '16px',
+  paddingRight: '16px',
+});
+
+const StyledBox = styled.div({
+  marginTop: "20px",
+});
+
+const PrintStyledBox = styled.div({
+  marginTop: "20px",
+  "@media print": {
+    marginTop: "0",
+  },
+});
+
+const CenteredBox = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+});
 
 export const CV = () => {
   const { Projects, Description, Skills, OpenSource, Footer } = useMdx();
 
   return (
     <Layout>
-      <Container
-        maxWidth={"md"}
-        sx={{ display: "flex", flexDirection: "column" }}
-      >
-        <Box>
+      <StyledContainer>
+        <div>
           <ProfileHeader />
-        </Box>
-        <Box mt="20px">
+        </div>
+        <StyledBox>
           <Description />
-        </Box>
-        <Box mt="20px">
+        </StyledBox>
+        <StyledBox>
           <Skills />
-        </Box>
-        <Box sx={{ marginTop: "20px", "@media print": { marginTop: "0" } }}>
+        </StyledBox>
+        <PrintStyledBox>
           <Projects />
-        </Box>
-        <Box>
+        </PrintStyledBox>
+        <div>
           <OpenSource />
-        </Box>
-        <Box display="flex" flexDirection="column" alignItems="center">
+        </div>
+        <CenteredBox>
           <Footer />
-        </Box>
-      </Container>
+        </CenteredBox>
+      </StyledContainer>
     </Layout>
   );
 };

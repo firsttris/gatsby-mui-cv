@@ -1,4 +1,3 @@
-import { Box } from "@mui/material"
 import { SkillGrid } from "./SkillGrid"
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
@@ -242,5 +241,5 @@ export const Skills = () => {
         }
     ]
 
-    return <Box>{skills.map((skill, index) => <SkillGrid key={index} {...skill} />)}</Box>
+    return <div>{skills.map((skill, index) => <SkillGrid key={index} {...skill} />)}</div>
 }
