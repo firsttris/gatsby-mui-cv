@@ -1,7 +1,6 @@
-import { styled } from "@mui/system";
-import { Box } from "@mui/material";
+import styled from "@emotion/styled";
 
-const StyledBox = styled(Box)({
+const StyledBox = styled.div({
   "@media print": {
     pageBreakBefore: "always",
   },

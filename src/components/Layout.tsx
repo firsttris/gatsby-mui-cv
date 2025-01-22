@@ -3,46 +3,86 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { MDXProvider } from "@mdx-js/react";
-import { Link, List, ListItem, ListItemText, Typography } from "@mui/material";
+import styled from "@emotion/styled";
 
 interface Props {
   children: React.ReactNode;
 }
 
+interface TypographyProps {
+  fontSize?: string;
+  fontWeight?: number;
+  mt?: number;
+}
+
+const StyledTypography = styled.p<TypographyProps>(({ fontSize, fontWeight, mt }) => ({
+  margin: 0,
+  fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+
+  lineHeight: 1.5,
+  letterSpacing: "0.00938em",
+  fontSize,
+  fontWeight,
+
+  marginTop: mt,
+}));
+
+const StyledList = styled.ul({
+  listStyle: "disc",
+  paddingLeft: "16px",
+  paddingBottom: "0px",
+});
+
+const StyledListItem = styled.li({
+  display: "list-item",
+  paggingTop: "0px",
+  paddingBottom: "0px",
+});
+
+const StyledListItemText = styled.span({
+  marginTop: "0px",
+  marginBottom: "0px",
+  fontSize: "14px",
+});
+
+const StyledLink = styled.a({
+  margin: "0px",
+  font: "inherit",
+  color: "rgb(25, 118, 210)",
+  textDecoration: "none",
+});
+
 export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <MDXProvider
       components={{
-        // Map HTML element tag to React component
-        p: ({ children }) => <Typography sx={{ fontSize: '14px'}}>{children}</Typography>,
+        p: ({ children }) => <StyledTypography fontSize="14px">{children}</StyledTypography>,
         h1: ({ children }) => (
-          <Typography fontWeight={500} sx={{ fontSize: "25px" }}>
+          <StyledTypography fontWeight={500} fontSize="25px">
             {children}
-          </Typography>
+          </StyledTypography>
         ),
         h2: ({ children }) => (
-          <Typography mt={2} fontWeight={500} sx={{ fontSize: "20px" }}>
+          <StyledTypography mt={2} fontWeight={500} fontSize="20px">
             {children}
-          </Typography>
+          </StyledTypography>
         ),
         h3: ({ children }) => (
-          <Typography sx={{ fontSize: "12px" }}>{children}</Typography>
+          <StyledTypography fontSize="12px">{children}</StyledTypography>
         ),
         h4: ({ children }) => (
-          <Typography sx={{ fontSize: "10px" }}>{children}</Typography>
+          <StyledTypography fontSize="10px">{children}</StyledTypography>
         ),
-        ul: ({ children }) => (
-          <List sx={{ listStyle: "disc", pl: 4, pb: 0 }}>{children}</List>
-        ),
+        ul: ({ children }) => <StyledList>{children}</StyledList>,
         li: ({ children }) => (
-          <ListItem sx={{ display: "list-item", py: "0px" }}>
-            <ListItemText primary={children} sx={{ my: 0 }} primaryTypographyProps={{fontSize: '14px'}}  />
-          </ListItem>
+          <StyledListItem>
+            <StyledListItemText>{children}</StyledListItemText>
+          </StyledListItem>
         ),
         a: ({ children, href }) => (
-          <Link underline="none" href={href} rel="noopener" target="_blank">
+          <StyledLink href={href} rel="noopener" target="_blank">
             {children}
-          </Link>
+          </StyledLink>
         ),
       }}
     >
